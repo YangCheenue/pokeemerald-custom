@@ -3273,7 +3273,7 @@ static void Cmd_getexp(void)
 
             }
 
-            calculatedExp = gSpeciesInfo[gBattleMons[gBattlerFainted].species].expYield * gBattleMons[gBattlerFainted].level;
+            calculatedExp = gSpeciesInfo[gBattleMons[gBattlerFainted].species].expYield * gBattleMons[gBattlerFainted].level * 2;
 
             *exp = SAFE_DIV(calculatedExp, viaSentIn);
             if (*exp == 0)
