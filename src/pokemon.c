@@ -3230,7 +3230,7 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
             APPLY_STAT_MOD(damage, attacker, attack, STAT_ATK)
 
         damage = damage * gBattleMovePower;
-        damage *= (1 * attacker->level / 5 + 2);
+        damage *= (attacker->level * (3 / 10) + 2);
 
         if (gCritMultiplier == 1.5)
         {
@@ -3285,7 +3285,7 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
             APPLY_STAT_MOD(damage, attacker, spAttack, STAT_SPATK)
 
         damage = damage * gBattleMovePower;
-        damage *= (1 * attacker->level / 5 + 2);
+        damage *= (attacker->level * (3 / 10) + 2);
 
         if (gCritMultiplier == 1.5)
         {
