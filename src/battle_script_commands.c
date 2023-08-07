@@ -3279,7 +3279,7 @@ static void Cmd_getexp(void)
             if (*exp == 0)
                 *exp = 1;
             
-            gExpShareExp = calculatedExp / 2;
+            gExpShareExp = calculatedExp / 4;
             
             if (gExpShareExp == 0)
                 gExpShareExp = 1;
